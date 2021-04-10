@@ -3,7 +3,7 @@ $("#currentDay").text(moment().format("dddd[,] MMMM Do"));
 console.log("current-day-working");
 
 /* Creates an array of hours to be used in scheduler display */
-var businessHoursList = [
+var hoursList = [
   "9am",
   "10am",
   "11am",
@@ -14,7 +14,7 @@ var businessHoursList = [
   "4pm",
   "5pm",
 ];
-/* Initiliazes the Day Planner */
+/*  initializes the Day Planner */
 var agendaList = JSON.parse(localStorage.getItem("day-planner"));
 /* Displays blank agenda list if there are no inputs */
 if (!agendaList) {
@@ -23,18 +23,18 @@ if (!agendaList) {
 console.log("hour array created");
 
 /* Building the display of the scheduler by hour with rows & columns */
-$.each(businessHoursList, function (index, businessHour) {
+$.each(hoursList, function (index, hour) {
   /* Creates a row */
   var hourRowEl = $('<li class="row">');
   /* Builds a row and adds an hour to row */
   var timeBlockEl = $('<div class="hour col-1">');
-  timeBlockEl.text(businessHour);
+  timeBlockEl.text(hour);
   hourRowEl.append(timeBlockEl);
   /* Adding text areas to the rows */
   var textAreaEl = $('<textarea class="col-10">');
-    /* Establishes current hour in 24hr formatting */
+  /* Establishes current hour in 24hr formatting */
   var hourNow = parseInt(moment().format("H"));
-    /* Establishes row hour in 24hr formatting */ 
+  /* Establishes row hour in 24hr formatting */
   var rowHour = index + 9;
 
   /* Choosing past, present or future classes based off current time */
@@ -53,7 +53,7 @@ $.each(businessHoursList, function (index, businessHour) {
   );
   saveButtonEl.html('<i class="fas fa-save"></i>');
   hourRowEl.append(saveButtonEl);
- /* Placing the row in the time-block html list */ 
+  /* Placing the row in the time-block html list */
   $(".time-block").append(hourRowEl);
 });
 

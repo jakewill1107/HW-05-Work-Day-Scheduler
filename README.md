@@ -7,17 +7,19 @@
 * [Acknowledgements](#acknowledgements)
 * [Questions](#questions)
 ## Description 
-This a code quiz about javascript built using html, css, javascript and Web APIs. 
-![screenshot image of starting page for Code Quiz](assets/screenshot.PNG)
+This is a daily scheduler application built using html, css, javascript and 3rd Party Web APIs: Jquery, Moment.js and Bootstrap. 
+![screenshot image of day scheduler](assets/screenshot.PNG)
 ## Technologies
 * HTML
 * CSS
 * Javascript
-* Web APIs
+* Bootstrap
+* Jquery
+* Moment.js
 ## Demonstration
-![screenshot image of password generator](assets/Code-Quiz-Challenge.gif)
+![gif of working day scheduler](assets/Work-Day-Scheduler.gif)
 ## Instructions
-The user clicks the 'start quiz' button and answers through a series of multiple-choice questions. A timer begins at the beginning of the quiz with 75 seconds and is decremented 10 seconds for wrong answers. The final score is equal to the seconds left when all questions are answered and the quiz is complete. The scores are stored locally along with user initials to be accessed in a separate 'highscores' page. 
+The user clicks on an hour time slot and inputs their scheduled activity for that hour.  Hour time blocks are highlighted in grey(past), red(current), and green(future).  The user can click the save button and the scheduled activity will remain in the planner. 
 ### About Us
 N.A.
 ## Installation
@@ -33,4 +35,4 @@ GitHub at [Jake](https://github.com/jakewill1107)
 Email at [Jake](mailto:jbwilliams84@mail.com)
 
 ## Link to Deployed Website
-https://jakewill1107.github.io/04-HW-Code-Quiz/
+https://jakewill1107.github.io/05-HW-Work-Day-Scheduler/
