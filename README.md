@@ -8,7 +8,7 @@
 * [Questions](#questions)
 ## Description 
 This is a daily scheduler application built using html, css, javascript and 3rd Party Web APIs: Jquery, Moment.js and Bootstrap. 
-![screenshot image of day scheduler](assets/screenshot.PNG)
+![screenshot image of day scheduler](assets/screenshot.png)
 ## Technologies
 * HTML
 * CSS
